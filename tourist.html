@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+       <head>
+          <title>tourist guide</title>
+          <link rel="stylesheet" href="./css/tourist.css" >
+          <link rel="stylesheet" href="../font/css/all.css">
+          <script src="../node_modules/jquery/dist/jquery.js"></script>
+          <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        </head>
+          <body>
+        <div class="uper">
+             <h1 class="heading"><span>S</span>kyscner</h1>
+           </div>
+           <div class="top container-sm">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="./cont.html">Contact</a></li>
+                    <li><a href="./aboutus.html">About</a></li>
+                </ul>
+           </div>
+           <div class="title">
+               <h3>HOLIDAY TRIP</h3>
+           </div>
+           <div class="nav">
+               <ul class="ico">
+                   <li><a href="./holiday.html">Holiday</a></li>
+                   <li><a href="#">hotels</a></li>
+                   <li><a href="#"> holidays essentials</a></li>
+                   <li><a href="#">attraction</a></li>
+                   <li><a href="#">desination</a></li>
+                   <li><a href="#">blog</a></li>
+               </ul>
+           </div>
+        <div class="walpper"> 
+           <div class="parent">
+                  <div class="child big-one col-lg-3">
+                       <span><a href="./london.html">London</a></span>
+                  </div>
+              </div>
+               <div class="parent">
+                  <div class="child big-two col-lg-3">
+                       <span>newyork</span>
+                  </div>
+              </div>
+               <div class="parent">
+                  <div class="child big-three col-lg-3">
+                       <span>timesquare</span>
+                  </div>
+              </div>
+               <div class="parent">
+                  <div class="child big-four col-lg-3">
+                       <span>losangel</span>
+                  </div>
+              </div>
+               <div class="parent">
+                  <div class="child big-five col-lg-3">
+                       <span>uk</span>
+                  </div>
+              </div>
+              <div class="parent">
+                  <div class="child big-six col-lg-3">
+                       <span>brooklyn</span>
+                  </div>
+                </div>
+                <div class="main">
+                    <div class="login-box">
+                       <div class="left-box">
+                           <h1>SignIn</h1>
+                           <input type="text" name="text" id="username"  placeholder="Username">
+                           <input type="text" name="text" id="email" placeholder="Email">
+                           <input type="password" name="password" id="password" placeholder="Password">
+                           <button onclick="signin()" class="btn">SignIn</button>
+                       </div>
+                       <script type="text/javascript">
+                               function signin()
+                               {
+                                   var uname=document.getElementById("username").value;
+                                   var email=document.getElementById("email").value;
+                                   var pass=document.getElementById("password").value;
+
+                                   if(uname=="Akash" && email=="akashku526@gmail.com" && pass==="789")
+                                   {
+                                       location.assign("///E:/practice/html/pra.html");
+                                   }
+                                   else{
+                                       window.alert("login failed");
+                                   }
+                               } 
+                               
+                        </script>
+
+                       <div class="right-box">
+                           <span class="signupwith">Sign In With</span>
+                           <button class="social facebook"> Facebook</button>
+                           <button class="social google"> Google</button>
+                           <button class="social twitter"> Twitter</button>
+                           <button class="social signup"><a href="./resister.html">SignUp</a></button>
+                       </div>
+                       <div class="or">
+                           OR
+                       </div>
+                    </div>
+                </div>
+           <div class="botton">
+            <a href="#" class="bot">WATCH VIDEO</a>
+            <a href="#" class="bot">BOOK TRIP</a>
+           </div> 
+      <div class="footer">
+                <a href="#"></a>
+                <a href="#" class="fot"></a>
+      </div>  
+</body>
+</html>

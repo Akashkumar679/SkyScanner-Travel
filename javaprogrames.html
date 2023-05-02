@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function f1(){ var login = `
+           <dl>
+            <dt>User Name</dt>
+            <dd><input type="text"></dd>
+            <dt>Password </dt>
+            <dd><input type="password"></dd>
+           </dl>
+           <button>Login</button>
+            `;
+          document.write(login);
+        }
+        f1();
+
+        
+        //string data type//
+
+
+         function VerifyName(){
+             var username = document.getElementById("txtName").value;
+             var msg = document.getElementById("msg");
+             var code = username.charCodeAt(0);
+             if(code>=65&&code<=90) {
+                 msg.innerHTML=`Verified ${username}`;
+             } else {
+                 msg.outerHTML=`Please Enter Name starting with Uppercase Letter `;
+             }
+            }
+            
+         function SubmitClick(){
+            var email = document.getElementById("txtEmail").value;
+            var msg = document.getElementById("mail");
+            var atIndex = email.indexOf("@");
+            if(atIndex==-1) {
+                msg.outerHTML="Error: @ required in Email";
+            } else {
+                msg.innerHTML=`Your Email ${email} Verified..`;
+            }
+          }
+          
+          </script>
+    <div>
+        Your Name:
+        <input type="text" id="txtName">
+        <button onclick="VerifyName()" type="button">Submit</button>
+        <h3 id="msg"></h3>
+        Verify Email:
+        <input type="text" id="txtEmail">
+        <button onclick="SubmitClick()" type="button">Submit</button>
+        <h2 id="mail"></h2>
+        
+    </div>
+</body>
+</html>
+
